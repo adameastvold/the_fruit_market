@@ -1,0 +1,29 @@
+.container {
+
+}
+
+img {
+  height: 100px;
+  width: 100px;
+  margin-left: 5px;
+}
+
+h4 {
+  display: inline-block;
+  border: 1px solid black;
+    margin-left: 5px;
+}
+
+#fruitWindow {
+  display: inline-block;
+  border: 1px solid black;
+    margin-left: 5px;
+}
+
+#customerTotal {
+  text-align: right;
+}
+
+#cart {
+  width: 300px;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+
+	<meta name="description" content="Webpage">
+	<link href="styles.css" rel="stylesheet">
+
+	<script src="vendors/jquery-3.1.0.min.js"></script>
+	<script src="app.js"></script>
+</head>
+
+<body>
+	<h1 id="customerTotal">Customer Total Cash: <span id="totalCash"> 0 </span> </h1>
+
+	<div class='container'>
+
+		<div id='fruitWindow' class="apple"><img src='images/apple.png' />
+			<h3>Apples</h3>
+			<h4>$<span class='ApplePrice'>2.00</span></h4>
+			<button id="buyApple">Buy</button>
+			<button id="sellApple">Sell</button>
+		</div>
+
+		<div id='fruitWindow' class="orange"><img src='images/orange.png' />
+			<h3>Oranges</h3>
+			<h4>$<span class='OrangePrice'>2.00</span></h4>
+			<button id="buyOrange">Buy</button>
+			<button id="sellOrange">Sell</button>
+		</div>
+
+		<div id='fruitWindow' class="pear"><img src='images/pear.png' />
+			<h3>Pears</h3>
+			<h4>$<span class='PearsPrice'>2.00</span></h4>
+			<button id="buyPear">Buy</button>
+			<button id="sellPear">Sell</button>
+		</div>
+
+		<div id='fruitWindow' class="banana"><img src='images/bananas.png' />
+			<h3>Bananas</h3>
+			<h4>$<span class='BananasPrice'>2.00</span></h4>
+			<button id="buyBanana">Buy</button>
+			<button id="sellBanana">Sell</button>
+		</div>
+
+	</div>
+	<h4 id="cart"> Customer Inventory: <br/>
+Apples: <span id="totalApple" style='padding-right: 15px'> 0 </span>Average: <span class="avgApple"></span><br/>
+Bananas: <span id="totalBananas" style='padding-right: 15px'> 0 </span>Average: <span class="avgBananas"></span><br/>
+Pears: <span id="totalPears" style='padding-right: 15px'> 0 </span>Average: <span class="avgPears"></span><br/>
+Oranges: <span id="totalOrange" style='padding-right: 15px'> 0 </span>Average: <span class="avgOrange"></span> <br/></h4>
+
+
+</body>
+
+</html>
