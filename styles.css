@@ -1,23 +1,30 @@
 .container {
-
+/*border: 1px solid black;*/
 }
 
+}
 img {
   height: 100px;
   width: 100px;
   margin-left: 5px;
 }
 
+h3 {
+  font-size: 30px;
+  margin-bottom: 0;
+}
 h4 {
   display: inline-block;
-  border: 1px solid black;
+  /*text-align: center;*/
+  /*border: 1px solid black;*/
     margin-left: 5px;
 }
 
 #fruitWindow {
   display: inline-block;
-  border: 1px solid black;
-    margin-left: 5px;
+  text-align: center;
+  /*border: 1px solid black;*/
+  margin-left: 45px;
 }
 
 #customerTotal {
