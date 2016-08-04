@@ -22,7 +22,7 @@ var fruitArray = [apple, orange, pears, banana];
 $(document).ready(function() {
 
   startTimer();
-  
+
     setInterval(function() {
         changePrice();
     }, 15000);
@@ -170,7 +170,7 @@ function customerEnd() {
    var total = customer.totalCash;
    var totalFruitCash = (customer.totalApple * apple.price) + (customer.totalBananas * banana.price) + (customer.totalPears * pears.price) + (customer.totalOrange + orange.price);
    total += totalFruitCash;
-   return total;
+   return Math.round(total * 100) / 100;
 }
 
 function buyFruit(fruit) {
