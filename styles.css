@@ -4,14 +4,20 @@
 
 }
 img {
-  height: 100px;
-  width: 100px;
+  height: 75px;
+  width: 75px;
   margin-left: 5px;
 }
 
+img {
+  height: 250px;
+  width: 200px;
+}
 h3 {
   font-size: 30px;
   margin-bottom: 0;
+
+  /*border: 1px solid black;*/
 }
 h4 {
   display: inline-block;
@@ -19,12 +25,14 @@ h4 {
   /*border: 1px solid black;*/
     margin-left: 5px;
 }
-
+#totalCash {
+  margin-right: 10px;
+}
 #fruitWindow {
   display: inline-block;
   text-align: center;
   /*border: 1px solid black;*/
-  margin-left: 45px;
+  height: 350px;
 }
 
 #customerTotal {
@@ -34,5 +42,9 @@ h4 {
 
 #cart {
   width: 300px;
+  /*border: 1px solid black;*/
+}
+
+button {
   /*border: 1px solid black;*/
 }
