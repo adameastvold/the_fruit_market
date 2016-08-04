@@ -29,8 +29,10 @@ h4 {
 
 #customerTotal {
   text-align: right;
+  /*border: 1px solid black;*/
 }
 
 #cart {
   width: 300px;
+  /*border: 1px solid black;*/
 }

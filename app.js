@@ -23,7 +23,7 @@ $(document).ready(function() {
 
     setInterval(function() {
         changePrice();
-    }, 10000);
+    }, 15000);
 
     function changePrice() {
         // console.log("");
@@ -108,7 +108,6 @@ function randomNumber(min, max) {
 function Fruit(name, price) {
     this.name = name;
     this.price = price;
-    // this.img = this.name + ".png";
     this.average = [];
 }
 
