@@ -1,5 +1,19 @@
+* {
+  color: white;
+}
+
+
+body {
+  background-color: black;
+  color: white;
+}
 .container {
 /*border: 1px solid black;*/
+background-color: black;
+color: white;
+width: 100%;
+color: white;
+
 }
 
 }
@@ -16,7 +30,7 @@ img {
 h3 {
   font-size: 30px;
   margin-bottom: 0;
-
+  color: white;
   /*border: 1px solid black;*/
 }
 h4 {
@@ -24,9 +38,11 @@ h4 {
   /*text-align: center;*/
   /*border: 1px solid black;*/
     margin-left: 5px;
+    color: white;
 }
 #totalCash {
   margin-right: 10px;
+  color: white;
 }
 #fruitWindow {
   display: inline-block;
@@ -42,9 +58,11 @@ h4 {
 
 #cart {
   width: 300px;
+  color: white;
   /*border: 1px solid black;*/
 }
 
 button {
   /*border: 1px solid black;*/
+  color: black;
 }
