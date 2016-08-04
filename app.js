@@ -21,6 +21,8 @@ var fruitArray = [apple, orange, pears, banana];
 
 $(document).ready(function() {
 
+  startTimer();
+  
     setInterval(function() {
         changePrice();
     }, 15000);
@@ -109,6 +111,66 @@ function Fruit(name, price) {
     this.name = name;
     this.price = price;
     this.average = [];
+}
+
+function startTimer() {
+   secCount = 0;
+   tenSecCount = 0;
+   minCount = 5;
+
+
+
+   setInterval(function() {
+
+
+
+
+       secCount--;
+       if (secCount == -1) {
+           secCount = 9;
+           tenSecCount--;
+       }
+
+       if (secCount == -1) {
+           secCount = 9;
+           tenSecCount--;
+       }
+       if (tenSecCount == -1) {
+           minCount--;
+           tenSecCount = 5;
+           secCount = 9;
+       }
+
+       // if (minCount < 0) {
+       //     minCount = 0;
+       //     tenSecCount = 0;
+       //     secCount = 0;
+       //     $('#min').text(minCount);
+       //     $('#tenSec').text(tenSecCount);
+       //     $('#sec').text(secCount);
+       //
+       // }
+
+
+       $('#min').text(minCount);
+       $('#tenSec').text(tenSecCount);
+       $('#sec').text(secCount);
+
+       if (minCount === 0 && secCount === 0 && tenSecCount === 0) {
+           alert("Selling a total of:\n" + customer.totalApple + " Apples\n" + customer.totalBananas + " Bananas\n" + customer.totalPears + " Pears\n" + customer.totalOrange + " Oranges \nFor a total of $" + customerEnd());
+           location.reload();
+       }
+
+   }, 1000);
+
+
+}
+
+function customerEnd() {
+   var total = customer.totalCash;
+   var totalFruitCash = (customer.totalApple * apple.price) + (customer.totalBananas * banana.price) + (customer.totalPears * pears.price) + (customer.totalOrange + orange.price);
+   total += totalFruitCash;
+   return total;
 }
 
 function buyFruit(fruit) {
